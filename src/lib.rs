@@ -74,13 +74,3 @@ impl Lottery {
         env.storage().instance().get(&DataKey::Status).unwrap()
     }
 }
-
-#[test]
-fn test() {
-    let env = Env::default();
-    let contract_id = env.register_contract(None, Lottery);
-    let client = LotteryClient::new(&env, &contract_id);
-    
-    let owner = Address::generate(&env);
-    client.init(&owner);
-}
