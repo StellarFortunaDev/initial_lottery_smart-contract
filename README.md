@@ -74,10 +74,11 @@ Commit your changes (git commit -m 'Add some amazing feature') \
 Push to the branch (git push origin feature/amazing-feature) \
 Open a Pull Request \
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details
-Contact
+License \
+This project is licensed under the MIT License - see the LICENSE file for details \
 
-Email: contact@stellarfortuna.com
-Telegram: @stellarfortunasocial
+Contact \
+
+Email: contact@stellarfortuna.com \
+Telegram: @stellarfortunasocial \
 
