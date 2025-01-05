@@ -30,40 +30,40 @@ cargo build --target wasm32-unknown-unknown --release
 soroban contract optimize --wasm target/wasm32-unknown-unknown/release/lottery.wasm 
 
 ## Deployment
-soroban contract deploy \
---wasm target/wasm32-unknown-unknown/release/lottery.wasm \
---source YOUR_SECRET_KEY \
+soroban contract deploy \ \
+--wasm target/wasm32-unknown-unknown/release/lottery.wasm \ \
+--source YOUR_SECRET_KEY \ \
 --network testnet
 
-##Initialize the contract (after deployment you'll get a contract ID) \
-soroban contract invoke \
---id CONTRACT_ID \
---source YOUR_SECRET_KEY \
---network testnet \
--- init \
+##Initialize the contract (after deployment you'll get a contract ID) \ 
+soroban contract invoke \ \
+--id CONTRACT_ID \ \
+--source YOUR_SECRET_KEY \ \
+--network testnet \ \
+-- init \ \
 --owner YOUR_PUBLIC_KEY
 
-##Join the lottery (for players): \
-soroban contract invoke \
---id CONTRACT_ID \
---source PLAYER_SECRET_KEY \
---network testnet \
--- join \
+##Join the lottery (for players): \ 
+soroban contract invoke \ \
+--id CONTRACT_ID \ \
+--source PLAYER_SECRET_KEY \ \
+--network testnet \ \
+-- join \ \
 --player PLAYER_PUBLIC_KEY
 
 ##Check players: \
-soroban contract invoke \
---id CONTRACT_ID \
---source YOUR_SECRET_KEY \
---network testnet \
+soroban contract invoke \ \
+--id CONTRACT_ID \ \
+--source YOUR_SECRET_KEY \ \
+--network testnet \ \
 -- get_players
 
 ##Draw the winner (only owner can do this): \
-soroban contract invoke \
---id CONTRACT_ID \
---source OWNER_SECRET_KEY \
---network testnet \
--- draw \
+soroban contract invoke \ \
+--id CONTRACT_ID \ \
+--source OWNER_SECRET_KEY \ \
+--network testnet \ \
+-- draw \ \
 --owner OWNER_PUBLIC_KEY
 
 
