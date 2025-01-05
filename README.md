@@ -35,7 +35,7 @@ soroban contract deploy \ \
 --source YOUR_SECRET_KEY \ \
 --network testnet
 
-##Initialize the contract (after deployment you'll get a contract ID) \
+## Initialize the contract (after deployment you'll get a contract ID) 
 
 soroban contract invoke \ \
 --id CONTRACT_ID \ \
@@ -44,7 +44,7 @@ soroban contract invoke \ \
 -- init \ \
 --owner YOUR_PUBLIC_KEY
 
-##Join the lottery (for players): \ 
+## Join the lottery (for players): 
 soroban contract invoke \ \
 --id CONTRACT_ID \ \
 --source PLAYER_SECRET_KEY \ \
@@ -52,14 +52,14 @@ soroban contract invoke \ \
 -- join \ \
 --player PLAYER_PUBLIC_KEY
 
-##Check players: \
+## Check players: 
 soroban contract invoke \ \
 --id CONTRACT_ID \ \
 --source YOUR_SECRET_KEY \ \
 --network testnet \ \
 -- get_players
 
-##Draw the winner (only owner can do this): \
+## Draw the winner (only owner can do this): 
 soroban contract invoke \ \
 --id CONTRACT_ID \ \
 --source OWNER_SECRET_KEY \ \
