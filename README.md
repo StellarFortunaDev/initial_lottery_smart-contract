@@ -35,7 +35,8 @@ soroban contract deploy \ \
 --source YOUR_SECRET_KEY \ \
 --network testnet
 
-##Initialize the contract (after deployment you'll get a contract ID) \ 
+##Initialize the contract (after deployment you'll get a contract ID) \
+
 soroban contract invoke \ \
 --id CONTRACT_ID \ \
 --source YOUR_SECRET_KEY \ \
